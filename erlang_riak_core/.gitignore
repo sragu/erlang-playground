@@ -1,0 +1,9 @@
+*.beam
+.eunit
+deps/*
+apps/rcore/ebin
+*~
+dev/*
+doc/*
+rel/
+
