@@ -30,6 +30,6 @@ defmodule Dpdiff.Mixfile do
   end
 
   defp root do
-	Path.dirname(__FILE__) |> Path.expand
+    Path.join([Path.dirname(__FILE__), "..", ".."]) |> Path.expand
   end
 end
