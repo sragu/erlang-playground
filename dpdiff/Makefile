@@ -20,3 +20,6 @@ clean:
 test:
 	@cd apps/dpdiff && $(dpdiff_path) DPDIFF_PATH=`pwd` MIX_ENV=testst mix deps.get
 	@cd apps/dpdiff && $(dpdiff_path) MIX_ENV=test mix test --no-start
+
+rel:
+	@cd apps/dpdiff && $(dpdiff_path) mix relex.clean relex.assemble
